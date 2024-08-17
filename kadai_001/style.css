@@ -1,0 +1,179 @@
+/* PC、スマホ共通スタイル */
+* {
+	box-sizing: border-box;
+}
+p {
+	font-size: 18px;
+	color: #000;
+}
+.google-fonts {
+	font-family: "Noto Sans JP", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 400;
+  	font-style: normal;
+}
+body {
+	max-width: 1440px;
+	height: auto;
+}
+header {
+	display: flex;
+	justify-content:space-between;
+	align-items: baseline;
+	margin: 10px 200px;
+	padding: 10px 0;
+}
+a#logo {
+	text-decoration: none;
+	color: #000;
+	font-size: 34px;
+	font-weight: bold;
+	border: solid 1px #000;
+	padding: 0 20px;
+}
+/* PC用ナビゲーション */
+#nav-pc ul li {
+	 list-style: none;
+	 display: inline-block;
+	 padding-left: 20px;
+}
+#nav-pc ul li a {
+	text-decoration: none;
+	color: #000;
+	font-size: 34px;
+	font-weight: bold;
+}
+/* メインビジュアル */
+#main-visual {
+	max-width: 100%;
+	margin: 0 30px;
+}
+/* .image {
+	max-width: 100%;
+	width: 1440px;
+	height: 100vh;
+	background-image: url(images/main.jpg);
+	background-size: cover;
+	background-position: center;
+} */
+#about > h2 {
+	font-size: 34px;
+	font-weight: bold;
+	text-align: center;
+}
+.about-flex > img {
+	border-radius: 50%;
+}
+.about-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#about-explan > span {
+	font-size: 24px;
+	font-weight: bold;
+}
+#about-explan ul,
+#about-explan span {
+	margin-left: 80px;
+}
+#about-explan ul li {
+	font-size: 18px;
+}
+/* works */
+#works > h2 {
+	font-size: 34px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.works-flex {
+	display: flex;
+	justify-content: center;
+}
+.works-flex > div > img,
+.works-flex > div > p {
+	width: 240px;
+}
+.works-photo {
+	margin: 0 20px;
+}
+.works-flex > div > p {
+	margin: 0;
+}
+/* footer */
+footer p {
+	text-align: center;
+	margin-top: 100px;
+}
+/* レスポンシブ指定 */
+@media screen and (max-width: 767px) {
+	header {
+		margin: 0;
+		justify-content: center;
+	}
+	a#logo {
+		font-size: 28px;
+	}
+	#nav-pc ul {
+		display: flex;
+		justify-content: space-between;
+	}
+	/* メインビジュアル */
+	#main-visual {
+		margin: 0 auto;
+	}
+	/* article > div {
+		width: 100%;
+		height: 100vh;
+		background-image: url(images/main.jpg);
+		background-size: cover;
+		background-position: center;
+	} */
+	/* About *//* works */
+	.about-flex,
+	.works-flex {
+		flex-direction: column;
+	}
+	/* About */
+	#about > h2 {
+		margin: 20px 0 60px;
+		font-size: 28px;
+	}
+	#about-explan span,
+	#about-explan ul {
+		margin: 0 10px;
+	}
+	#about-explan span {
+		padding-left: 20px;
+	}
+	#about-explan ul {
+		padding-top: 10px;
+	}
+	/* works */
+	#works > h2 {
+		margin: 80px 0 20px 0;
+		font-size: 28px;
+	}
+	.works-flex > div > img {
+		width: 100%;
+	}
+	.works-photo {
+		margin: 0;
+	}
+	.works-flex > div > p {
+		text-align: center;
+    	width: 100%;
+    	margin-bottom: 30px;
+	}
+	#nav-pc ul li a {
+		font-size: 21px;
+	}
+	#nav-pc ul {
+		padding: 0;
+	}
+	/* footer */
+	footer p {
+		margin-top: 50px;
+	}
+}
